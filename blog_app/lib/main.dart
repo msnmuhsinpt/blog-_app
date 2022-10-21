@@ -1,3 +1,4 @@
+import 'package:blog_app/ui/screens/blog_view_screen.dart';
 import 'package:blog_app/ui/screens/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,12 @@ Route onGenerateRoute(RouteSettings settings) {
       page = CupertinoPageRoute(
         builder: (context) => const HomeScreen(),
       );
+      break;
+    case "/blogView":
+      page = CupertinoPageRoute(
+        builder: (context) => const BlogViewScreen(),
+      );
+      break;
   }
   return page;
 }
