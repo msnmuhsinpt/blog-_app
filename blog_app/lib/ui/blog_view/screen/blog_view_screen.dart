@@ -1,8 +1,9 @@
 import 'package:blog_app/core/constance.dart';
 import 'package:blog_app/ui/widget/app_app_bar.dart';
 import 'package:flutter/material.dart';
+
 import '../../../../core/app_colors.dart';
-import '../../../widget/app_text_view.dart';
+import '../../widget/app_text_view.dart';
 
 class BlogViewScreen extends StatefulWidget {
   final String id;
@@ -56,7 +57,7 @@ class _BlogViewScreenState extends State<BlogViewScreen> {
                       height: 40,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: kBlue,
+                          backgroundColor: AppColor.kBlue,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
@@ -65,7 +66,7 @@ class _BlogViewScreenState extends State<BlogViewScreen> {
                           Navigator.pushNamed(context, '/blogAdd');
                         },
                         child: appTextView(
-                            name: 'Edit', isBold: true, color: kWhite),
+                            name: 'Edit', isBold: true, color: AppColor.kWhite),
                       ),
                     ),
                     SizedBox(
@@ -73,14 +74,14 @@ class _BlogViewScreenState extends State<BlogViewScreen> {
                       height: 40,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: kRed,
+                          backgroundColor: AppColor.kRed,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(15),
                           ),
                         ),
                         onPressed: () {},
                         child: appTextView(
-                            name: 'Delete', isBold: true, color: kWhite),
+                            name: 'Delete', isBold: true, color: AppColor.kWhite),
                       ),
                     ),
                   ],

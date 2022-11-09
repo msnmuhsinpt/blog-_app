@@ -1,7 +1,8 @@
 import 'package:blog_app/blocs/bloc_explore.dart';
 import 'package:blog_app/model/blog_model.dart';
-import 'package:blog_app/ui/screens/home/widget/home_main_card.dart';
 import 'package:flutter/material.dart';
+
+import '../widget/home_main_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

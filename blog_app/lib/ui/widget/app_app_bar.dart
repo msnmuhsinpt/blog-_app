@@ -14,12 +14,12 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
       leading: IconButton(
         icon: const Icon(
           Icons.arrow_back,
-          color: kWhite,
+          color: AppColor.kWhite,
         ),
         onPressed: (() => Navigator.popAndPushNamed(context, "/home")),
       ),
       centerTitle: true,
-      title: appTextView(name: titile, isBold: true, size: 18,color: kWhite),
+      title: appTextView(name: titile, isBold: true, size: 18,color: AppColor.kWhite),
     );
   }
 }

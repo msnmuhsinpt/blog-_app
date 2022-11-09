@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
+
 import 'package:blog_app/blocs/bloc_explore.dart';
-import 'package:blog_app/core/app_colors.dart';
 import 'package:blog_app/core/constance.dart';
 import 'package:blog_app/model/blog_model.dart';
 import 'package:blog_app/ui/widget/app_app_bar.dart';
@@ -9,6 +9,8 @@ import 'package:blog_app/ui/widget/app_text_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:image_picker/image_picker.dart';
+
+import '../../../core/app_colors.dart';
 
 class AddBlogScreen extends StatefulWidget {
   const AddBlogScreen({super.key});
@@ -151,7 +153,7 @@ class _AddBlogScreenState extends State<AddBlogScreen> {
                   height: 45,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: kBlue,
+                        backgroundColor: AppColor.kBlue,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         )),
@@ -174,7 +176,7 @@ class _AddBlogScreenState extends State<AddBlogScreen> {
                       }
                     },
                     child: appTextView(
-                        name: 'submit', isBold: true, size: 17, color: kWhite),
+                        name: 'submit', isBold: true, size: 17, color: AppColor.kWhite),
                   ),
                 ),
                 dividerSH(),

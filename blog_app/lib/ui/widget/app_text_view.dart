@@ -5,7 +5,7 @@ Widget appTextView(
     {String name = "",
     double size = 15,
     int maxLines = 1,
-    Color color = kBlack,
+    Color color = AppColor.kBlack,
     bool isBold = false}) {
   return Text(
     name,
